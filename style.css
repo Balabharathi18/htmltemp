@@ -15,6 +15,7 @@ body{
     margin-left: auto;
     margin-top:100px;
     display: flex;
+    border-radius: 20px;
     flex-direction: row;
     /* margin-bottom: auto; */
 }
@@ -90,10 +91,48 @@ li a:hover{
     margin-right: 20px;
     color:white;
     border-radius: 5px;
+    cursor: pointer;
 }
 .btn #con{
     background-color:#008080;
     padding: 5px;
     color:white;
     border-radius: 5px;
+    cursor: pointer;
 }
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      max-width: 90vw;
+      margin-top: 50px;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0;
+    }
+  
+    .registraion_form {
+      width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90vw;
+    }
+  
+    .registraion_form {
+      padding: 15px;
+    }
+  
+    .btn {
+      margin-left: 40%;
+    }
+  }
